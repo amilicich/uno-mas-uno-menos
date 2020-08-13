@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="main" class="container-fluid">
+            <center><h1>Uno mas, uno menos</h1></center>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group" style="float: left;">
+                    <button type="button" id="player1" class="btn btn-primary">Jugador1</button>
+                    <input style="display:none;" type="email" class="form-control" id="player1Input" placeholder="Jugador1">
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="form-group" style="float: none;">
+                    <button id="startGame" type="button" class="btn btn-info">Iniciar</button> 
+                    <button style="display: none; float: left;" type="button" id="score1" class="btn btn-primary">0</button>
+                    <button style="display: none;" id="play" type="button" class="btn btn-primary">Elige carta</button> 
+                    <input style="display:none;" type="input" class="form-control" id="answer" placeholder="Respuesta">
+                    <button style="display: none; float: right;" type="button" id="score2" class="btn btn-danger">0</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group" style="float: right;">
+                    <button type="button" id="player2" class="btn btn-danger">Jugador2</button>
+                    <input style="display:none;" type="email" class="form-control" id="player2Input" placeholder="Jugador2">
+                </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/model/game.js"></script>
+    <script src="./js/controller/gameController.js"></script>
+    <script src="./js/view/mainView.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
